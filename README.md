@@ -573,7 +573,7 @@ plt.xlabel("Price")
 plt.ylabel("#Count")
 ```
 
-![png](/img/output_15_1.png)
+![png](./imgs/output_15_1.png)
 
 There is a considerably larger cluser of cars in the lower price ranges over the cars in in the larger price ranges.
 
@@ -589,7 +589,7 @@ plt.ylabel("Horsepower")
 plt.plot(np.unique(clean_cars['price']), np.poly1d(np.polyfit(clean_cars['price'], clean_cars['horsepower'], 1))(np.unique(clean_cars['price'])), c='r')
 ```
 
-![png](/img/output_18_1.png)
+![png](./imgs/output_18_1.png)
 
 
 Besides from a few outliers there seems to be a strong correlation between the cost of a car and the hourse power provided in the car with a linear increase as hourse power increases so does that of the cost
@@ -611,7 +611,7 @@ gra.set_xlabel("Make", fontsize=20)
 gra.set_ylabel("Price", fontsize=20)
 ```
 
-![png](/img/output_21_1.png)
+![png](./imgs/output_21_1.png)
 
 
 Companies that offer primarily higher cost cars tend to offer cars of lower value whereas companies that offer primarily lower cost cars tend to stick to their lower economical price range.
@@ -631,7 +631,7 @@ gra.set_xlabel("Make", fontsize=14)
 gra.set_ylabel("Price", fontsize=14)
 ```
 
-![png](/img/utput_24_1.png)
+![png](./imgs/utput_24_1.png)
 
 
 bmw seems to heavily out preform the other companies shown in terms of the range of prices available.
@@ -951,7 +951,7 @@ plt.xlabel("K value")
 plt.ylabel("Accuracy")
 ```
 
-![png](/img/output_34_1.png)
+![png](./imgs/output_34_1.png)
 
 
 ### Optimise the parameter k via cross-validated   
@@ -1014,7 +1014,7 @@ plt.xlabel("K value")
 plt.ylabel("Accuracy")
 ```
 
-![png](/img/output_38_1.png)
+![png](./imgs/output_38_1.png)
 
 ```python
 plt.plot(kVal, res)
@@ -1023,4 +1023,4 @@ plt.xlabel("K value")
 plt.ylabel("Accuracy")
 ```
 
-![png](/img/output_39_1.png)
+![png](./imgs/output_39_1.png)
