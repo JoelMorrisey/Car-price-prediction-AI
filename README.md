@@ -616,7 +616,7 @@ gra.set_ylabel("Price", fontsize=20)
 
 Companies that offer primarily higher cost cars tend to offer cars of lower value whereas companies that offer primarily lower cost cars tend to stick to their lower economical price range.
 
-#### Relationship between `price` and `make`
+#### Relationship between `price` and `make` (specific cars)
 
 
 ```python
@@ -631,7 +631,7 @@ gra.set_xlabel("Make", fontsize=14)
 gra.set_ylabel("Price", fontsize=14)
 ```
 
-![png](./imgs/utput_24_1.png)
+![png](./imgs/output_24_1.png)
 
 
 bmw seems to heavily out preform the other companies shown in terms of the range of prices available.
