@@ -591,8 +591,6 @@ clean_cars.head(10)
 
 
 
-###  Data Exploration
-
 #### A histogram on `Price` and findings
 
 
@@ -609,6 +607,10 @@ plt.ylabel("#Count")
 
     Text(0, 0.5, '#Count')
 
+
+
+
+![png](output_15_1.png)
 
 
 There is a considerably larger cluser of cars in the lower price ranges over the cars in in the larger price ranges.
@@ -629,12 +631,12 @@ plt.plot(np.unique(clean_cars['price']), np.poly1d(np.polyfit(clean_cars['price'
 
 
 
-    [<matplotlib.lines.Line2D at 0x1a235b1e80>]
+    [<matplotlib.lines.Line2D at 0x1a1e1fbd30>]
 
 
 
 
-![png](output_19_1.png)
+![png](output_18_1.png)
 
 
 Besides from a few outliers there seems to be a strong correlation between the cost of a car and the hourse power provided in the car with a linear increase as hourse power increases so does that of the cost
@@ -664,7 +666,7 @@ gra.set_ylabel("Price", fontsize=20)
 
 
 
-![png](output_22_1.png)
+![png](output_21_1.png)
 
 
 Companies that offer primarily higher cost cars tend to offer cars of lower value whereas companies that offer primarily lower cost cars tend to stick to their lower economical price range.
@@ -692,7 +694,7 @@ gra.set_ylabel("Price", fontsize=14)
 
 
 
-![png](output_25_1.png)
+![png](output_24_1.png)
 
 
 bmw seems to heavily out preform the other companies shown in terms of the range of prices available.
@@ -1046,7 +1048,7 @@ plt.ylabel("Accuracy")
 
 
 
-![png](output_35_1.png)
+![png](output_34_1.png)
 
 
 ### Optimise the parameter k via cross-validated   
@@ -1119,7 +1121,7 @@ plt.ylabel("Accuracy")
 
 
 
-![png](output_39_1.png)
+![png](output_38_1.png)
 
 
 
@@ -1138,5 +1140,5 @@ plt.ylabel("Accuracy")
 
 
 
-![png](output_40_1.png)
+![png](output_39_1.png)
 
