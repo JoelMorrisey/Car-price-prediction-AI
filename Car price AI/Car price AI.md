@@ -1,4 +1,5 @@
 
+  
 # Car price prediction AI
 
 ### Attribute Information
@@ -602,21 +603,11 @@ plt.xlabel("Price")
 plt.ylabel("#Count")
 ```
 
-
-
-
-    Text(0, 0.5, '#Count')
-
-
-
-
 ![png](output_15_1.png)
-
 
 There is a considerably larger cluser of cars in the lower price ranges over the cars in in the larger price ranges.
 
 #### Relationship between `price` and `horsepower`
-
 
 ```python
 plt.scatter(clean_cars['price'], clean_cars['horsepower'])
@@ -627,14 +618,6 @@ plt.ylabel("Horsepower")
 #produces line of best fit
 plt.plot(np.unique(clean_cars['price']), np.poly1d(np.polyfit(clean_cars['price'], clean_cars['horsepower'], 1))(np.unique(clean_cars['price'])), c='r')
 ```
-
-
-
-
-    [<matplotlib.lines.Line2D at 0x1a1e1fbd30>]
-
-
-
 
 ![png](output_18_1.png)
 
@@ -658,14 +641,6 @@ gra.set_xlabel("Make", fontsize=20)
 gra.set_ylabel("Price", fontsize=20)
 ```
 
-
-
-
-    Text(0, 0.5, 'Price')
-
-
-
-
 ![png](output_21_1.png)
 
 
@@ -685,14 +660,6 @@ gra = sns.violinplot(clean_cars[accepted_Rows]['make'], clean_cars[accepted_Rows
 gra.set_xlabel("Make", fontsize=14)
 gra.set_ylabel("Price", fontsize=14)
 ```
-
-
-
-
-    Text(0, 0.5, 'Price')
-
-
-
 
 ![png](output_24_1.png)
 
@@ -1016,7 +983,7 @@ from sklearn.metrics import roc_auc_score
 print('\033[1m' + "AUC: "+ '\033[0m' + str(roc_auc_score(y_test,y_prediction)))
 ```
 
-    [1mAUC: [0m0.9126050420168067
+***AUC:*** 0.9126050420168067
 
 
 ### Train the KNN classfication model via different k values.   
@@ -1039,14 +1006,6 @@ plt.title("KNN results")
 plt.xlabel("K value")
 plt.ylabel("Accuracy")
 ```
-
-
-
-
-    Text(0, 0.5, 'Accuracy')
-
-
-
 
 ![png](output_34_1.png)
 
@@ -1087,10 +1046,8 @@ print("Corresponding AUC performance:")
 print('\033[0m', end ='')
 print(str(roc_auc_score(y_test,y_prediction)))
 ```
-
-    [1mThe best k value is: [0m7
-    [1mCorresponding AUC performance:
-    [0m0.9126050420168067
+***The best k value is:*** 7
+***Corresponding AUC performance:*** 0.9126050420168067
 
 
  ### Train the KNN classification model via 5-fold CV
@@ -1113,17 +1070,7 @@ plt.xlabel("K value")
 plt.ylabel("Accuracy")
 ```
 
-
-
-
-    Text(0, 0.5, 'Accuracy')
-
-
-
-
 ![png](output_38_1.png)
-
-
 
 ```python
 plt.plot(kVal, res)
@@ -1132,13 +1079,4 @@ plt.xlabel("K value")
 plt.ylabel("Accuracy")
 ```
 
-
-
-
-    Text(0, 0.5, 'Accuracy')
-
-
-
-
 ![png](output_39_1.png)
-
